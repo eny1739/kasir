@@ -1,0 +1,126 @@
+print("Kasir Kelompok 10 Tugas 4")
+print('''====DAFTAR MENU====
+Makanan :
+1.Ayam Geprek    : 16.200
+2.Ayam Krispi    : 13.500
+3.Ayam Kecap     : 13.800
+4.Ayam Rica-rica : 18.200
+Minuman :
+1.es teh /hangat   : 3.500
+2.es jeruk /hangat : 4.000
+3.Susu Panas/Dingin''')
+print("=========================")
+harga1=int(input("masukan harga barang :"))
+jumlah1=int(input("masukan jumlah barang :"))
+barang1=harga1*jumlah1
+p1=int(input("pilih 1 jika ada pesanan lain :"))
+if p1==1 :
+    harga2=int(input("masukan harga barang :"))
+    jumlah2=int(input("masukan jumlah barang :"))
+    barang2=harga2*jumlah2
+    p2=int(input("pilih 1 jika ada pesanan lain :"))
+    if p2== 1:
+        harga3=int(input("masukan harga barang :"))
+        jumlah3=int(input("masukan jumlah barang :"))
+        barang3=harga3*jumlah3
+        p3=int(input("pilih 1 jika ada pesanan lain :"))
+        if p3 == 1 :
+            harga4=int(input("masukan harga barang :"))
+            jumlah4=int(input("masukan jumlah barang :"))
+            barang4=harga4*jumlah4
+            p4=int(input("pilih 1 jika ada pesanan lain :"))
+            if p4 == 1 :
+                harga5=int(input("masukan harga barang :"))
+                jumlah5=int(input("masukan jumlah barang :"))
+                barang5=harga5*jumlah5
+                p5=int(input("pilih 1 jika ada pesanan lain :"))
+                if p5 == 1 :
+                    harga=int(input("masukan harga barang :"))
+                    jumlah6=int(input("masukan jumlah barang :"))
+                    barang6=harga5*jumlah5
+                    p6=int(input("pilih 1 jika ada pesanan lain :"))
+                    if p6 == 1 :
+                        harga7=int(input("masukan harga barang :"))
+                        jumlah7=int(input("masukan jumlah barang :"))
+                        barang7=harga7*jumlah7
+                        total=barang1+barang2+barang3+barang4+barang5+barang6+barang7
+                        print(f"total harga yang harus dibayar adalah {total}")
+                    else :
+                        total=barang1+barang2+barang3+barang4+barang5+barang6
+                        print(f"total harga yang harus dibayar adalah {total}")
+                else :
+                    total=barang1+barang2+barang3+barang4+barang5
+                    print(f"total harga yang harus dibayar adalah :{total}")
+            else :
+                total=barang1+barang2+barang3+barang4
+                print(f"total harga yang harus dibayar :{total}")
+        else :
+            total=barang1+barang2+barang3
+            print(f"total harga yang dibayar : {total}")
+    else :
+        total=barang1+barang2
+        print(f"total harga yang dibayar : {total}")
+        
+else :
+    total=barang1
+    print(f"Total yang harus dibayar :{total}")   
+
+uang1  = int(100000)
+uang2  = int(50000)
+uang3  = int(20000)
+uang4  = int(10000)
+uang5  = int(5000)
+uang6  = int(2000)
+uang7  = int(1000)
+uang8  = int(500)
+uang9  = int(200)
+uang10 = int(100)
+
+uang_dibayarkan=int(input("masukan jumlah uang yang dibayarkan :"))
+kembalian=uang_dibayarkan-total
+
+pecahan1 = kembalian//uang1
+pecahan2 = kembalian%uang1//uang2
+pecahan3 = kembalian%uang1%uang2//uang3
+pecahan4 = kembalian%uang1%uang2%uang3//uang4
+pecahan5 = kembalian%uang1%uang2%uang3%uang4//uang5
+pecahan6 = kembalian%uang1%uang2%uang3%uang4%uang5//uang6
+pecahan7 = kembalian%uang1%uang2%uang3%uang4%uang5%uang6//uang7
+pecahan8 = kembalian%uang1%uang2%uang3%uang4%uang5%uang6%uang7//uang8
+pecahan9 = kembalian%uang1%uang2%uang3%uang4%uang5%uang6%uang7%uang8//uang9
+pecahan10 = kembalian%uang1%uang2%uang3%uang4%uang5%uang6%uang7%uang8%uang9//uang10
+
+voucher = 1000000
+
+if total <= voucher :
+    if pecahan1 > 0 :
+        print ("lembar 100000 sebanyak :"+ str(pecahan1))
+    if pecahan2 > 0 :
+        print ("lembar 50000  sebanyak :"+ str(pecahan2))
+    if pecahan3 > 0 :
+        print ("lembar 20000  sebanyak :"+ str(pecahan3))
+    if pecahan4 > 0 :
+        print ("lembar 10000  sebanyak :"+ str(pecahan4))
+    if pecahan5 > 0 :
+        print ("lembar 5000   sebanyak :"+ str(pecahan5))
+    if pecahan6 > 0 :
+        print ("lembar 2000   sebanyak :"+ str(pecahan6))
+    if pecahan7 > 0 :
+        print ("lembar 1000   sebanyak :"+ str(pecahan7))
+    if pecahan8 > 0 : 
+        print ("lembar 500    sebanyak :"+ str(pecahan8))
+    if pecahan9 > 0 :
+        print ("lembar 200    sebanyak :"+ str(pecahan9))
+    if pecahan10 > 0 :
+        print ("lembar 100    sebanyak :"+ str(pecahan10))
+else:
+    print ("pembelian tidak dapat dilanjutkan")
+    
+print(f"jumlah kembalian adalah :{kembalian}")
+print("TERIMAKASIH SUDAH BERBELANJA")
+
+#KELOMPOK 10
+#1.edwin wahyu triyantoro
+# nim : 230535604337
+#2.christian hamonangan lumbanggaol
+# nim : 230535608110
